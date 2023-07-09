@@ -6,9 +6,9 @@ CREATE PROCEDURE CheckBooking (IN booking_date DATETIME, IN table_number INT)
 BEGIN
 IF EXISTS (SELECT BookingID FROM Bookings WHERE Bookings.BookingDate = booking_date AND Bookings.TableNumber = table_number)
 THEN
-SELECT CONCAT("Table " , table_number, " is booked") AS `Booking Status`; 
+SELECT CONCAT("Table " , table_number, " is booked") AS "BookingStatus"; 
 ELSE
-SELECT CONCAT("Table " , table_number, " is available") AS `Booking Status`; 
+SELECT CONCAT("Table " , table_number, " is available") AS "BookingStatus"; 
 END IF;
 END //
 

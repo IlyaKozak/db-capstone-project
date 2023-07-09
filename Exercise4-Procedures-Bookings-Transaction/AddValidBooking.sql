@@ -8,13 +8,13 @@ SELECT BookingID INTO @id FROM Bookings ORDER BY BookingID DESC LIMIT 1;
 SET @id = @id + 1;
 IF EXISTS(SELECT BookingID FROM Bookings WHERE (BookingDate = booking_date AND TableNumber = table_number))
 THEN
-SELECT CONCAT("Table " , table_number, " is booked. Booking is cancelled.") AS `Booking status`; 
+SELECT CONCAT("Table " , table_number, " is booked. Booking is cancelled.") AS "BookingStatus"; 
 ROLLBACK;
 ELSE
 INSERT INTO Bookings (BookingID, BookingDate, TableNumber, CustomerID)
 VALUES (@id, booking_date, table_number, customer_id);
 COMMIT;
-SELECT CONCAT("Booking for table " , table_number, " is successful.") AS `Booking status`; 
+SELECT CONCAT("Booking for table " , table_number, " is successful.") AS "BookingStatus"; 
 END IF;
 END //
 
