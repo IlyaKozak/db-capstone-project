@@ -1,7 +1,7 @@
 DELIMITER //
 CREATE PROCEDURE CancelOrder(IN id INT)
 BEGIN
-IF EXISTS(SELECT 1 FROM LittleLemonDB.Orders WHERE OrderID = id)
+IF EXISTS(SELECT OrderID FROM LittleLemonDB.Orders WHERE OrderID = id)
 THEN
 DELETE FROM LittleLemonDB.OrderDeliveryStatus WHERE OrderID = id; 
 DELETE FROM LittleLemonDB.Orders WHERE OrderID = id; 
