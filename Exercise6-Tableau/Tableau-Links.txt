@@ -1,0 +1,14 @@
+1. Customer Sales Bar Chart:
+https://public.tableau.com/app/profile/ilya.kozak/viz/Meta-Database-Engineer-Capstone/CustomerSales
+
+2. Profit Line Chart:
+https://public.tableau.com/app/profile/ilya.kozak/viz/Meta-Database-Engineer-Capstone/ProfitChart
+
+3. Sales Bubble Chart:
+https://public.tableau.com/app/profile/ilya.kozak/viz/Meta-Database-Engineer-Capstone/SalesBubbleChart
+
+4. Cuisine Sales & Profit Bar Chart:
+https://public.tableau.com/app/profile/ilya.kozak/viz/Meta-Database-Engineer-Capstone/CuisineSalesProfit
+
+5. Dashboard:
+https://public.tableau.com/app/profile/ilya.kozak/viz/Meta-Database-Engineer-Capstone/CustomersSales
